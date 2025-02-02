@@ -7,7 +7,7 @@
 #include "encoder_press.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [_BASE] = LAYOUT_wildo_katana(
+    [_BASE] = LAYOUT_wildo_vault_katana(
           ___BASE_1_L___,                              ___BASE_1_R___,
           ___BASE_2_L___,                              ___BASE_2_R___,
           ___BASE_3_L___,           ENC_BASE,          ___BASE_3_R___,

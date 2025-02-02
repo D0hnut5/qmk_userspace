@@ -48,6 +48,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           ___ADD_1_L___,            ENC_ADD,           ___ADD_1_R___,
           ___ADD_2_L___,                               ___ADD_2_R___,
           ___ADD_3_L___,                               ___ADD_3_R___,
-               ___ADD_2THM_L___,             ___ADD_2THM____  
+               ___ADD_2THM_L___,             ___ADD_2THM_R___  
     )
 };

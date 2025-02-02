@@ -77,7 +77,7 @@ enum layer_names {
 #define ___NUM_2_R___           KC_6,       KC_7,       KC_8,       KC_9,       KC_0
 #define ___NUM_3_R___           KC_MINS,    KC_EQL,     KC_SCLN,    KC_QUOT,    KC_QUES
 #define ___NUM_3THM_R___        KC_PSCR,    RGB_MOD,    RGB_RMOD
-#define ___NUM_2THM_R___        KC_PSCR,    RGB_MOD,
+#define ___NUM_2THM_R___        KC_PSCR,    RGB_MOD
 #define ___NUM_3THM_SPLT_R___   XXXXXXX,    KC_PSCR,    RGB_RMOD
 
 /*** navigation ***/
