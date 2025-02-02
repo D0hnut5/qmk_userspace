@@ -241,7 +241,8 @@ enum combos {
      DF_TAB,
      JK_BACK,
      FJ_CAPS,
-     QPZ_BOOT
+     QPZ_BOOT,
+     ZXCV_DELETE
 };
 
 const uint16_t PROGMEM qw_combo[] = {KC_Q, KC_W, COMBO_END};
@@ -249,6 +250,7 @@ const uint16_t PROGMEM df_combo[] = {D_CTL, F_SFT, COMBO_END};
 const uint16_t PROGMEM jk_combo[] = {J_SFT, K_CTL, COMBO_END};
 const uint16_t PROGMEM fj_combo[] = {F_SFT, J_SFT , COMBO_END};
 const uint16_t PROGMEM qpz_combo[] = {KC_Q, KC_P, KC_Z, KC_SLSH, COMBO_END};
+const uint16_t PROGMEM zxcv_combo[] = {KC_Z, KC_X, KC_C, KC_V, COMBO_END};
 
 combo_t key_combos[] = {
     [QW_ESC] = COMBO(qw_combo, KC_ESC),
@@ -256,6 +258,7 @@ combo_t key_combos[] = {
     [JK_BACK] = COMBO(jk_combo, RCTL(KC_BSPC)),
     [FJ_CAPS] = COMBO(fj_combo, KC_CAPS),
     [QPZ_BOOT] = COMBO(qpz_combo, QK_BOOT),
+    [ZXCV_DELETE] = COMBO(zxcv_combo, KC_DEL),
 };
 #endif
 
