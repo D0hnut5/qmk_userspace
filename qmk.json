@@ -1,6 +1,9 @@
 {
     "userspace_version": "1.1",
     "build_targets": [
-        ["jlw/bruce_the_keyboard", "wildo"]
+        ["jlw/bruce_the_keyboard", "wildo"],
+        ["sporkus/le_chiffre_32", "wildo"],
+        ["jlw/vault35_katana", "wildo"],
+        ["projectcain/acolyte", "wildo"]
     ]
 }
