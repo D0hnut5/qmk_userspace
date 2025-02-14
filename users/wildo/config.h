@@ -22,6 +22,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 180
 #define TAPPING_TERM_PER_KEY
 
+#define CAPS_WORD_INVERT_ON_SHIFT
+
 // start QMK squeezing
 #undef LOCKING_SUPPORT_ENABLE
 #undef LOCKING_RESYNC_ENABLE

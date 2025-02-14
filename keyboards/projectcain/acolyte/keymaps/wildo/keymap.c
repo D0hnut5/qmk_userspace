@@ -17,6 +17,8 @@
 #include QMK_KEYBOARD_H
 #include "wildo.h"
 #include "encoder_map.h"
+#include "encoder_press.h"
+#include "combos_30alpha.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT_wildo(

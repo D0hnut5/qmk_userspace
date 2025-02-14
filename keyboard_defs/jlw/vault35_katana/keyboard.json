@@ -89,8 +89,9 @@
             {"matrix": [0, 4], "x": 91, "y": 16, "flags": 2}
         ],
         "driver": "ws2812",
+        "animation": "cycle_all",
+        "speed": 32, 
         "hue_steps": 4,
-        "max_brightness": 69,
         "sat_steps": 4,
         "val_steps": 4
     },

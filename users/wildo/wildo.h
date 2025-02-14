@@ -222,25 +222,28 @@ bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
 }
 #endif*/
 
-#ifdef TAPPING_TERM_PER_KEY
+/*#ifdef TAPPING_TERM_PER_KEY
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case F_SFT:
             return 140;
         case J_SFT:
             return 140;
+        case A_GUI:
+            return 200;
         default:
             return TAPPING_TERM;
     }
 }
-#endif
+#endif*/
 
-#ifdef COMBO_ENABLE
+/*#ifdef COMBO_ENABLE
 enum combos {
      QW_ESC,
      DF_TAB,
      JK_BACK,
      FJ_CAPS,
+     WFJ_CAPS,
      QPZ_BOOT,
      ZXCV_DELETE
 };
@@ -249,6 +252,7 @@ const uint16_t PROGMEM qw_combo[] = {KC_Q, KC_W, COMBO_END};
 const uint16_t PROGMEM df_combo[] = {D_CTL, F_SFT, COMBO_END};
 const uint16_t PROGMEM jk_combo[] = {J_SFT, K_CTL, COMBO_END};
 const uint16_t PROGMEM fj_combo[] = {F_SFT, J_SFT , COMBO_END};
+const uint16_t PROGMEM wfj_combo[] = {KC_W, F_SFT, J_SFT , COMBO_END};
 const uint16_t PROGMEM qpz_combo[] = {KC_Q, KC_P, KC_Z, KC_SLSH, COMBO_END};
 const uint16_t PROGMEM zxcv_combo[] = {KC_Z, KC_X, KC_C, KC_V, COMBO_END};
 
@@ -256,11 +260,13 @@ combo_t key_combos[] = {
     [QW_ESC] = COMBO(qw_combo, KC_ESC),
     [DF_TAB] = COMBO(df_combo, KC_TAB),
     [JK_BACK] = COMBO(jk_combo, RCTL(KC_BSPC)),
-    [FJ_CAPS] = COMBO(fj_combo, KC_CAPS),
+    [FJ_CAPS] = COMBO(fj_combo, KC_CAPS), // regular caps lock
+    [WFJ_CAPS] = COMBO(fj_combo, CW_TOGG), // caps word
     [QPZ_BOOT] = COMBO(qpz_combo, QK_BOOT),
     [ZXCV_DELETE] = COMBO(zxcv_combo, KC_DEL),
 };
 #endif
+*/
 
 /** layout macros **/
 #define LAYOUT_wildo(...)              LAYOUT(__VA_ARGS__)
